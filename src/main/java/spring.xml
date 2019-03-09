@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="machine" class="com.ssi.ATMMachine" autowire="byName"/>
+
+
+<bean id="card1" class="com.ssi.SBICard">
+	<constructor-arg value="11223"/>
+</bean>
+
+<bean id="card2" class="com.ssi.HDFCCard">
+	<constructor-arg value="55667"/>
+</bean>
+
+ 
+</beans>
